@@ -4,7 +4,8 @@ load("~/R_code_&_data/titanic.raw.rdata")
 head(titanic.raw)
 attach(titanic.raw)
 
-install.packages(Matrix)
+install.packages("Matrix")
+install.packages("arules")
 library(arules)
 # find association rules with default settings
 rules = apriori(titanic.raw)
